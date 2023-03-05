@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/ifi0mjg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Checkout</title>
+</head>
+<body>
+    <div class="payment-shipping-container">
+      <p class="payment-shipping-text">Payment and shipping</p>
+      <form class="checkout-form-container">
+        <div class="customer-info-container">
+          <p class="customer-info-text">Customer Information</p>
+          <p class="customer-info-subtext">Fields marked as (*) are required.</p>
+          <div class="customer-input-flex-container">
+            <input class="customer-name-input" type="text" placeholder="First name*">
+            <input class="customer-surname-input" type="text" placeholder="Last name*">
+          </div>
+        </div>
+
+        <div class="shipping-info-container">
+          <p class="shipping-info-text">Shipping Address</p>
+          <input class="shipping-address-input" type="text" placeholder="Address*">
+          <div class="shipping-details-flex-container">
+            <input class="shipping-country-input" type="text" placeholder="Country*">
+            <input class="shipping-state-input" type="text" placeholder="Region/State*">
+            <input class="shipping-code-input" type="text" placeholder="Postal code*">
+          </div>
+        </div>
+
+        <p class="payment-info-text">Payment Method</p>
+
+        <div class="payment-info-container">
+          <p class="credit-card-text">Credit Card</p>
+          <div class="credit-card-container">
+            <input class="card-number-input" type="text" placeholder="Card number">
+            <input class="card-expiration-input" type="text" placeholder="mm/yy">
+            <input class="card-cvv-input" type="text" placeholder="cvv">
+          </div>
+        </div>
+
+        <div class="checkout-button-container">
+          <button type="submit"><span class="button-text-style">Complete order</span></button>
+        </div>
+
+        <div class="secure-payment-logos-container">
+          <img class="nortonsecure-logo" src="assets/NortonSecure.svg" alt="NortonSecure">
+          <img class="verisign-logo" src="assets/VeriSign.svg" alt="VeriSign">
+          <img class="mcafee-logo" src="assets/McAfee.svg" alt="McAfee">
+          <img class="comodo-logo" src="assets/Comodo.svg" alt="Comodo">
+        </div>
+      </form>
+
+      <div class="order-summary-container">
+        <div id="product-in-cart-container" class="product-in-cart-container">
+          <img class="product-image-in-cart" src="assets/Group 1802.png" alt="product-image-in-cart">
+          <p class="product-quantity-in-cart">3x</p>
+          <p class="product-title-in-cart">CoreProduct®</p>
+          <p class="product-total-price">$39.99</p>
+          <button id="remove-product-from-cart" class="remove-product-from-cart">Remove</button>
+        </div>
+  
+        <div class="total-price-container">
+          <p class="total-cart-text">Total</p>
+          <p class="total-cart-currency">usd</p>
+          <p class="total-cart-price">$39.99</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-footer-container">
+      <img class="logoipsum-logo" src="assets/logoipsum-logo-8 1.svg" alt="logoipsum-logo">
+      <a class="terms-of-service-link" href="#">Terms of Service</a>
+      <a class="privacy-policy-link" href="#">Privacy Policy</a>
+      <a class="returns-link" href="#">Returns</a>
+      <a class="faq-link" href="#">FAQ</a>
+      <p>© 2022 Logoipsum. All  rights reserved</p>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
