@@ -1,0 +1,831 @@
+body {
+  width: 1440px;
+  margin: auto;
+  height: 100%;
+  background: #FFFFFF;  
+}
+
+
+/* MAIN FORM CONTAINER */
+.payment-shipping-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 845px;
+  height: 938px;
+  padding-top: 52px;
+  background: #F8F1EB;
+  border-radius: 0px;
+}
+
+.payment-shipping-text {
+  width: auto;
+  height: 26px;
+  margin-left: 151px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.checkout-form-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 640px;
+  height: 796px;
+  margin-right: 55px;
+  margin-left: 150px;
+  margin-top: 11px;
+  margin-bottom: 50px;
+  background: #FFFFFF;
+  border: 1px solid #E9D6C5;
+  border-radius: 6px;
+}
+
+
+/* CUSTOMER INFORMATION CONTAINER */
+.customer-info-container {
+  width: 592px;
+  height: 104px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.customer-info-text {
+  width: 156px;
+  height: 20px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.customer-info-subtext {
+  width: 185px;
+  height: 16px;
+  margin: 0px;
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #BDBDBD;
+}
+
+.customer-input-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.customer-name-input {
+  box-sizing: border-box;
+  padding: 0px;
+  width: 288px;
+  height: 48px;
+  margin-top: 16px;
+  margin-right: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.customer-name-input::placeholder {
+  width: 74px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+.customer-surname-input {
+  box-sizing: border-box;
+  width: 288px;
+  height: 48px;
+  margin-top: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.customer-surname-input::placeholder {
+  width: 73px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+
+/* SHIPPING INFO CONTAINER */
+.shipping-info-container {
+  width: 592px;
+  height: 148px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 30px;
+}
+
+.shipping-info-text {
+  width: 123px;
+  height: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.shipping-details-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.shipping-address-input {
+  box-sizing: border-box;
+  width: 592px;
+  height: 48px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+.shipping-address-input::placeholder {
+  width: 58px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+.shipping-country-input {
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-right: 16px;
+  width: 202px;
+  height: 48px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+.shipping-country-input::placeholder {
+  width: 81px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+.shipping-state-input {
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-right: 16px;
+  width: 202px;
+  height: 48px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+.shipping-state-input::placeholder {
+  width: 81px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+.shipping-code-input {
+  box-sizing: border-box;
+  margin-top: 16px;
+  width: 156px;
+  height: 48px;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.shipping-code-input::placeholder {
+  width: 81px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+
+/* PAYMENT INFO CONTAINER */
+.payment-info-text {
+  width: 134px;
+  height: 20px;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.payment-info-container {
+  box-sizing: border-box;
+  width: 592px;
+  height: 202px;
+  margin-left: 24px;
+  margin-bottom: 30px;
+  border: 1px solid #F2F2F2;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+}
+
+
+/* CREDIT CARD CONTAINER */
+.credit-card-text {
+  width: 574px;
+  height: 20px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  margin: 0px;
+  padding-left: 16px;
+  margin-right: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
+  border-bottom: 1px #E0E0E0 solid;
+  background: white;
+}
+
+.credit-card-container {
+  width: 590px;
+  height: 146px;
+  background-color: #FAFAFA;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.card-number-input {
+  box-sizing: border-box;
+  width: 560px;
+  height: 48px;
+  margin-top: 16px;
+  margin-left: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.card-number-input::placeholder {
+  width: 86px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+  }
+
+.card-expiration-input {
+  box-sizing: border-box;
+  width: 112px;
+  height: 48px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.card-expiration-input::placeholder {
+  width: 51px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+
+}
+
+.card-cvv-input {
+  box-sizing: border-box;
+  width: 112px;
+  height: 48px;
+  margin-top: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.card-cvv-input::placeholder {
+  width: 32px;
+  height: 24px;
+  padding-left: 12px;
+  font-family: 'Sofia Pro', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+
+/* CHECKOUT BUTTON CONTAINER */
+.checkout-button-container button {
+  width: 592px;
+  height: 56px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  background-color: #009900;
+  box-shadow: 0px 4px 10px rgba(67, 40, 16, 0.24);
+  border-radius: 3px;
+  border: none;
+}
+
+.checkout-button-container button:hover {
+  background-color: #08b508;
+}
+
+.checkout-button-container button>span.button-text-style {
+  width: 137px;
+  height: 24px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+/* SECURE PAYMENT LOGOS */
+.secure-payment-logos-container {
+  display: flex;
+  flex-direction: row;
+  width: 374px;
+  height: 56px;
+  margin-bottom: 50px;
+  margin-left: 133px;
+  margin-right: 133px;
+}
+
+.nortonsecure-logo {
+  width: 87.5px;
+  height: 49px;
+  margin-right: 4px;
+}
+
+.verisign-logo {
+  width: 91px;
+  height: 49px;
+  margin-right: 4px;
+}
+
+.mcafee-logo {
+  width: 91px;
+  height: 49px;
+  margin-right: 4px;
+}
+
+.comodo-logo {
+  width: 87.5px;
+  height: 49px;
+}
+
+
+/* ORDER SUMMARY CONTAINER */
+.order-summary-container {
+  margin-top: 36px;
+  margin-left: 71px;
+  width: 374px;
+  height: 72px;
+}
+
+.product-in-cart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 374px;
+  height: 72px;
+  padding-bottom: 16px;
+  border-bottom: 1px #E0E0E0 solid;
+}
+
+.product-in-cart-container .product-quantity-in-cart {
+  height: 24px;
+  margin-left: 32px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.product-in-cart-container .product-title-in-cart {
+  height: 24px;
+  margin-left: 4px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.product-in-cart-container .product-total-price {
+  height: 24px;
+  margin-left: 95px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.remove-product-from-cart {
+  display: none;
+}
+
+.remove-product-from-cart.show {
+  display: block;
+  position: relative;
+  left: -276px;
+  top: 24px;
+  height: 12px;
+  margin-left: 10px;
+  padding: 0px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #DC624E;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.total-price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 374px;
+  height: 77px;
+}
+
+.total-price-container .total-cart-text {
+  width: 40px;
+  height: 24px;
+  margin-top: 20px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.total-price-container .total-cart-currency {
+  width: 26px;
+  height: 16px;
+  margin-left: 214px;
+  font-family: 'Sofia Pro', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.total-price-container .total-cart-price {
+  width: 84px;
+  height: 24px;
+  margin-left: 10px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: right;
+  color: #333333;
+}
+
+
+/* CHECKOUT FOOTER CONTAINER */
+.checkout-footer-container {
+  display: flex;
+  align-items: center;
+  width: 1440px;
+  height: 54px;
+  margin-bottom: 0px;
+  background: #DC624E;
+}
+
+.checkout-footer-container .logoipsum-logo {
+  width: 108px;
+  height: 23px;
+  margin-left: 150px;
+  margin-right: 29px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.checkout-footer-container .terms-of-service-link {
+  text-decoration: none;
+  width: 90px;
+  height: 15px;
+  margin-right: 32px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.checkout-footer-container .privacy-policy-link {
+  text-decoration: none;
+  width: 75px;
+  height: 15px;
+  margin-right: 32px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.checkout-footer-container .returns-link {
+  text-decoration: none;
+  width: 42px;
+  height: 15px;
+  margin-right: 32px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.checkout-footer-container .faq-link {
+  text-decoration: none;
+  width: 23px;
+  height: 15px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.checkout-footer-container p {
+  width: 270px;
+  height: 15px;
+  margin-left: 481px;
+  margin-right: 76px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 767px) {
+
+  .payment-shipping-container {
+    display: block;
+    /* flex-wrap: nowrap; */
+    width: 360px;
+    height: 1118px;
+  }
+
+  .checkout-form-container {
+    display: block;
+    /* flex-direction: column; */
+    width: 330px;
+    height: 959px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .payment-shipping-text {
+    margin-left: 15px;
+  }
+
+  .customer-info-container {
+    width: 298px;
+    height: 166px;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .customer-input-flex-container {
+    flex-direction: column;
+  }
+
+  .customer-name-input, .customer-surname-input {
+    box-sizing: border-box;
+    width: 298px;
+  }
+
+  .shipping-info-container {
+    width: 298px;
+    height: 274px;
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .shipping-details-flex-container {
+    flex-direction: column;
+  }
+
+  .shipping-address-input, .shipping-country-input, .shipping-state-input, .shipping-code-input {
+    width: 298px;
+  }
+
+  .payment-info-container {
+    width: 298px;
+    height: 202px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .payment-info-text {
+    margin-left: 16px;
+  }
+
+  .credit-card-text {
+    padding-left: 16px;
+    padding-right: 16px;
+    /* margin: 0px; */
+    width: 266px;
+  }
+
+  .credit-card-container {
+    width: 298px;
+  }
+
+  .card-number-input {
+    width: 266px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .card-expiration-input {
+    width: 125px;
+    margin-left: 15px;
+    margin-right: 13px;
+  }
+
+  .card-cvv-input {
+    width: 125px;
+  }
+
+  .checkout-button-container button {
+    width: 298px;
+    height: 48px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .secure-payment-logos-container {
+    width: 298px;
+    height: 45px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .nortonsecure-logo {
+    width: 69.72px;
+    height: 39.38px;
+    margin-right: 4px;
+  }
+
+  .verisign-logo {
+    width: 72.51px;
+    height: 39.38px;
+    margin-right: 4px;
+  }
+
+  .mcafee-logo {
+    width: 72.51px;
+    height: 39.38px;
+    margin-right: 4px;
+  }
+
+  .comodo-logo {
+    width: 69.72px;
+    height: 39.38px;
+    margin-right: 4px;
+  }
+
+  .checkout-footer-container {
+    flex-direction: column;
+    width: 360px;
+    height: 160px;
+  }
+
+  .checkout-footer-container .logoipsum-logo {
+    width: 183px;
+    height: 39px;
+    margin-left: 98px;
+    margin-right: 79px;
+    margin-top: 20px;
+  }
+
+  .checkout-footer-container p {
+    width: 201px;
+    margin-left: 80px;
+    margin-right: 79px;
+    margin-bottom: 20px;
+  }
+
+  .order-summary-container {
+    display: none;
+  }
+
+}
